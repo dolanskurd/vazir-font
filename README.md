@@ -20,7 +20,7 @@ A Persian (Farsi) Font
 <br>
 
 <p dir="rtl"> با تشکر از برنامه  <a href="https://fontforge.github.io">FontForge</a></p>
-<p dir="rtl"> بر مبنای فونت <a href="http://dejavu-fonts.org">DejaVu Sans 2.35</a></p>
+<p dir="rtl"> بر مبنای فونت <a href="https://dejavu-fonts.github.io/">DejaVu Sans 2.35</a></p>
 
 </p>
 <p lang="fa" dir="rtl" align="right">
@@ -37,30 +37,64 @@ A Persian (Farsi) Font
 
 ```css
 @font-face {
-  font-family: Vazir;
-  src: url('Vazir.eot');
-  src: url('Vazir.eot?#iefix') format('embedded-opentype'),
-       url('Vazir.woff') format('woff'),
-       url('Vazir.ttf') format('truetype');
-  font-weight: normal;
+    font-family: Vazir;
+    src: url('Vazir.eot');
+    src: url('Vazir.eot?#iefix') format('embedded-opentype'),
+         url('Vazir.woff2') format('woff2'),
+         url('Vazir.woff') format('woff'),
+         url('Vazir.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
 }
-      
 @font-face {
-  font-family: Vazir;
-  src: url('Vazir-Bold.eot');
-  src: url('Vazir-Bold.eot?#iefix') format('embedded-opentype'),
-       url('Vazir-Bold.woff') format('woff'),
-       url('Vazir-Bold.ttf') format('truetype');
-  font-weight: bold;
+    font-family: Vazir;
+    src: url('Vazir-Bold.eot');
+    src: url('Vazir-Bold.eot?#iefix') format('embedded-opentype'),
+         url('Vazir-Bold.woff2') format('woff2'),
+         url('Vazir-Bold.woff') format('woff'),
+         url('Vazir-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
 }
-
 @font-face {
-  font-family: Vazir;
-  src: url('Vazir-Light.eot');
-  src: url('Vazir-Light.eot?#iefix') format('embedded-opentype'),
-       url('Vazir-Light.woff') format('woff'),
-       url('Vazir-Light.ttf') format('truetype');
-  font-weight: 300;
+    font-family: Vazir;
+    src: url('Vazir-Black.eot');
+    src: url('Vazir-Black.eot?#iefix') format('embedded-opentype'),
+         url('Vazir-Black.woff2') format('woff2'),
+         url('Vazir-Black.woff') format('woff'),
+         url('Vazir-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+@font-face {
+    font-family: Vazir;
+    src: url('Vazir-Medium.eot');
+    src: url('Vazir-Medium.eot?#iefix') format('embedded-opentype'),
+         url('Vazir-Medium.woff2') format('woff2'),
+         url('Vazir-Medium.woff') format('woff'),
+         url('Vazir-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+@font-face {
+    font-family: Vazir;
+    src: url('Vazir-Light.eot');
+    src: url('Vazir-Light.eot?#iefix') format('embedded-opentype'),
+         url('Vazir-Light.woff2') format('woff2'),
+         url('Vazir-Light.woff') format('woff'),
+         url('Vazir-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: Vazir;
+    src: url('Vazir-Thin.eot');
+    src: url('Vazir-Thin.eot?#iefix') format('embedded-opentype'),
+         url('Vazir-Thin.woff2') format('woff2'),
+         url('Vazir-Thin.woff') format('woff'),
+         url('Vazir-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
 }
 ```
 
@@ -87,14 +121,14 @@ Link fonts from the [RawGit](https://rawgit.com) CDN:
 <link href="https://cdn.rawgit.com/rastikerdar/vazir-font/v[X.Y.Z]/dist/font-face.css" rel="stylesheet" type="text/css" />
 ```
 
-Replace [X.Y.Z] with the latest version (e.g. 18.0.1) and integrate the font into your CSS:
+Replace [X.Y.Z] with the latest version (e.g. 19.0.0) and integrate the font into your CSS:
 
 ```
 font-family: 'Vazir', sans-serif;
 ```
 
 #### Homebrew
-You can install the font on macOS machines by tapping the caskroom/fonts repo:  
+You can install the font on macOS machines by tapping the caskroom/fonts repo:
 
 ```shell
 brew tap caskroom/fonts
